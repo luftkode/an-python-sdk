@@ -1,0 +1,25 @@
+[project]
+name = "an_python_sdk"
+version = "1.0.0"
+dependencies = [
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "John Doe", email = "test@test.com"},
+]
+description = "SDK for Advanced Navigation devices"
+readme = "README.md"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+# [tool.mypy]
+# strict = true
+
+# [tool.ruff.lint]
+# select = ["D"]
+# ignore = ["D100", "D104", "D200", "D212"]
+
+# [tool.ruff.lint.pydocstyle]
+# convention = "google"
