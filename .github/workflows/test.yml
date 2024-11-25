@@ -1,0 +1,25 @@
+name: Python package
+
+on:
+  push:
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: extractions/setup-just@v2
+    - name: Build container
+      run: just init
+    # - name: Lint with flake8
+    #   run: just lint
+    - name: Test with pytest
+      run: just test

@@ -13,13 +13,3 @@ classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python"
 ]
-
-# [tool.mypy]
-# strict = true
-
-# [tool.ruff.lint]
-# select = ["D"]
-# ignore = ["D100", "D104", "D200", "D212"]
-
-# [tool.ruff.lint.pydocstyle]
-# convention = "google"
