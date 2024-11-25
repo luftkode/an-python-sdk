@@ -1,12 +1,7 @@
-version: '3.8'
-
 services:
     dev:
         build:
             context: .
             dockerfile: Dockerfile
-        # environment:
-        #     - SSH_AUTH_SOCK=/ssh-agent
         volumes:
-            - ../:/app
-            #- ${SSH_AUTH_SOCK}:/ssh-agent
+            - .:/app
