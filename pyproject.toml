@@ -2,6 +2,8 @@
 name = "an_python_sdk"
 version = "1.0.0"
 dependencies = [
+  "pyserial>=3.5",
+  "fastcrc>=0.2.1",
 ]
 requires-python = ">=3.7"
 authors = [
